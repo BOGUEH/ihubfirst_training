@@ -9,9 +9,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <form name="form" id="form">
 
+    <section>
+        <div class="unitConverApp"> 
+            <h1> UNIT CONVERTION</h1>
+            <form  name="form" id="form"> 
+                                    
+                
+                <div class="converterUnites">
+                    <input type="text"  name="input"  id="input" placeholder="input">
+                    <select name="" id="input-type">
+                        <option value="meter">Meter</option>
+                        <option value="inches">Inches</option>
+                        <option value="feet">Feet</option>
+                        <option value="yards">Yard</option>
+                        
+                    </select>
+                </div>
+                <span> = </span>
+                <div class="converterUnites">
+                    <input type="text " name="result" id="result" placeholder="result">
+                    <select name=""  id="result-type">
+                        <option value="meter">Meter</option>
+                        <option value="inches">Inches</option>
+                        <option value="feet">Feet</option>
+                        <option value="yards">Yard</option>
+                        
+                    </select>
+                </div>
+            
+        </form>
+    </div>
+    </section>
+
+       
+     
+    <form name="form" id="form">
+        <div id="formAll">
+            <h1 id="regHead">REGISTER WITH GODS'IMPACT</h1>
         <div> 
             <label for="fName">First name:</label><br>
             <input type="text" id="fName" name="fName" placeholder="first name" maxlength="12" minlength="8" ><br>
@@ -43,9 +78,10 @@
             <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password"><br>
             <p class="errorMessage"></p>
         </div>
-       
-            
+               
             <button type="submit" id="submitBtn"> Submit:</button>
+        </div>
+
   </form>
 
   <script src="./validation.js"></script>
