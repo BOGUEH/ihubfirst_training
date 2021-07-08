@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <form name="form" id="form">
+
+        <div> 
+            <label for="fName">First name:</label><br>
+            <input type="text" id="fName" name="fName" placeholder="first name" maxlength="12" minlength="8" ><br>
+            <p class="errorMessage"></p>
+       </div>
+       <div>
+            <label for="lName">Last name:</label><br>
+            <input type="text" id="lName" name="lName" placeholder="last name" maxlength="12" minlength="8"> 
+            <p class="errorMessage"></p>
+        </div>
+       <div>
+            <label for="userName">User Name:</label><br>
+            <input type="text" id="userName" name="UserName" placeholder="User Name" maxlength="8" minlength="6"><br>
+            <p class="errorMessage"></p>
+        </div>
+        
+        <div> 
+            <label for="email">email:</label> <br>
+            <input type="text" id="email" name="email" placeholder="ictyep@ihub.com"> <br>
+            <p class="errorMessage"></p>
+        </div>
+        <div>
+            <lable for="password">password</lable><br>
+            <input type="password" id="password" name="password" placeholder="enter password"> <br>
+            <p class="errorMessage"></p>
+        </div>
+        <div>
+            <lable for="password">Re-type password</lable> <br>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="confirm password"><br>
+            <p class="errorMessage"></p>
+        </div>
+       
+            
+            <button type="submit" id="submitBtn"> Submit:</button>
+  </form>
+
+  <script src="./validation.js"></script>
+  <!-- <script src="./test.js"></script> -->
+</body>
+</html>
